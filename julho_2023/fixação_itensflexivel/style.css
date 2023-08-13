@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400&display=swap');
+body{
+    
+    font-family: 'Urbanist',sans-serif;
+}
+.navegacao{
+    display:flex;
+    list-style: none;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    background: hotpink;
+    
+}
+.navegacao a{
+    text-decoration:none; 
+    display:block;
+    padding:1em;
+    color: #000000;
+}
+.navegacao a:hover{
+    background: #fff;
+    color: hotpink;
+    
+}
+        @media all and (max-width:800px){
+            .navegacao{
+                justify-content: space-around;
+            }
+        }
+        @media all and (max-width:600px){
+            .navegacao{
+                flex-flow:column wrap;
+                padding: 0;
+            }
+        }
+        .navegacao a{
+            text-align:center;
+            padding:10px;
+            border-top:1px solid rgba(255, 255,255, 0.3);
+            boder-bottom:1px solid rgba(0,0,0,0.1);
+        }
+        .navegacao li :last-of-type a{
+            border-bottom:none;
+            
+        }

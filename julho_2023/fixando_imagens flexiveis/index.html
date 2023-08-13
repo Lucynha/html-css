@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixaçao da atividade de  imagens  flexiveis</title>
+</head>
+<body>
+    <h1>Fixando Imagens Flexíveis </h1>
+    <p>Esta é uma atividade  para fixação de imagens flexíveis em HTML.</p>
+    <picture>
+        <source media="(max-width:700px )" srcset="img/foto_pequena.png" type="image/png">
+        <source media="(max-width:1000px )" srcset="img/foto_media.png" type="image/png">
+        <img src="img/foto_grande.png" alt="Imagem flexível">
+    </picture>
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos  aprender a reproduzir áudios em HTML.</p>
+    <!--<audio src="mp3/OutKast.mp3" controls autoplay></audio>--Esta é uma  outra forma de  criar audio, porém, ela não é compatível  com todos os navegadores.-->
+    <audio preload="metadata" autoplay controls>
+        <source src="mp3/OutKast.mp3" type="audio/mpeg">
+        <source src="mp3/OutKast.ogg" type="audio/ogg">
+        <source src="mp3/OutKast.wav" type="audio/wav"><!--esse arquivo é muito pesado-->
+        <p>Caso o  seu navegador não conseguir reproduzir o áudio,<a href="mp3/OutKast.mp3"></a>Clique aqui para  baixar o arquivo.</p>
+
+    </audio>
+
+</body>
+</html>

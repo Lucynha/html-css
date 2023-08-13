@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family= Noto +Sans:wght@100;400 & display=swap');
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+.body *{/*tudo que  estiver dentro do body co o  asterístico  será usado universalmente.*/
+    box-sizing: border-box;
+}
+.main-login{
+    width: 100vw; /*vw significa view port  width tamanho da largura da tela*/
+    height:100vh;
+    background: #201b2c;
+    display: flex; /*o display:flex, faz com que as coisas fiquem lado a lado dentro do seu site.*/
+    justify-content:center; /* alinha tudo no eixo x.*/
+    align-items: center;/*alinha tudo no eixo y*/
+}
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;/* alinha os textos  em colunas, ou seja um embaixo do outro. Mesmo usando o display flex.*/
+}
+.left-login > h1{
+    /*Chama todas as tags dentro da class que  esta  incluida.*/
+    color: #77ffc0;
+    font-size: 3vw;
+}
+.left-login-astrounauta{
+    width: 35vw;
+}
+.right-login{
+    width:50vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card-login{
+    width:60%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding: 30px 35px;/* o primeiro valor se refere a parte superior e inferior, o segundo valor se refere a parte esquerda e  direita das  margens internas.*/
+    background: #2f2841;
+    border-radius:20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.card-login >h1{
+    color:#00ff88;
+    font-weight: 800;
+    margin:0;
+}
+.textfield{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    margin:10px 0px;
+}
+.textfield>input{
+    width:100%;
+    border:none;
+    border-radius:10px;
+    padding: 15px;
+    background: #514869;
+    color:#f0ffffde;
+    font-size:12pt;
+    box-shadow:#00000056;
+    outline: none; /*remove as linhas em volta do placeholder usuário.*/
+    box-sizing:border-box;
+}
+.textfield >label{
+    color:#f0ffffde;
+    margin-bottom:10px;
+
+}
+.textfild>input::placeholder{
+    color:#f0ffff94;
+
+}
+
+.btn-login{
+    width:100%;
+    padding: 16px 0px;
+    margin:25px;  
+    border:none;
+    border-radius:8px;
+    outline:none;
+    text-transform:uppercase;/*tranforma todas as letras maiúsculas.*/
+    font-weight: 800;
+    letter-spacing:3px;/* cria um espacçamento entre as letras.*/
+    color:#2b134b;
+    background: #00ff88;
+    cursor:pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+
+
+}
+/*criando media queries*/
+@media only screen and (max-width:950px)/*enquanto o for uma largura de 950 pixels adicione os elementos que  vou colocar agora.
+*/{
+    .card-login{
+        width:85%
+    }
+
+}
+@media only screen and (max-width:600px){
+    .main-login{
+        flex-direction:column;
+    }
+    .left-login>h1{
+        display: none;
+    }
+    .left-login{ /*aumenta a largura da pagina em relação ao tamanho do dispositivo.*/
+        width: 100%;
+        height: auto;
+    }
+    .right-login{/*aumenta a largura da pagina em relação ao tamanho do dispositivo.*/
+        width:100%;
+        height: auto;
+    }
+
+    .left-login-astrounauta{
+        width:50vh;
+    }
+    .card-login{
+        width: 90%;
+         
+    }
+}

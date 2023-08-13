@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Flexiveis</title>
+</head>
+<body>
+    <h1>Exercictando Imagens  Flexíveis</h1>
+    <p>Criarei uma  forma para que as figuras apareçam de forma compatível com o disspositivo escolhido.</p>
+    <picture>
+        <source media="(max-width:700px)" srcset="foto/img_pequena.png">
+        <source media="(max-width:1000px)" srcset="foto/img_media.png">
+
+        <img src="foto/img_grande.png" alt="Foto Flexível">
+    </picture>
+
+    <audio  preload="metadata" autoplay controls>
+        <source src="mp3/Beyonce-Move-Your-Body.mp3" type="audio/mpeg">
+        <source src="mp3/Beyonce-Move-Your-Body.ogg" type="mp3/ogg">
+        <source src="mp3/Beyonce-Move-Your-Body.wav" type="audio/wav">
+    </audio>
+   
+</body>
+</html>

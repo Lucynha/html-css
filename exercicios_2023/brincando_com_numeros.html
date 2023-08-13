@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Números</title>
+</head>
+<body>
+    <h1>Usando Números no JavaScript</h1>
+    <h2> Números Inteiros</h2>
+    <p>Para usar os  números inteiros no JS, é necessário  fazer a conversão de string para  número, usando o seguinte comando: <strong>Numbe.parseInt(n)</strong></p>
+    <h2> Números Flutuantes</h2>
+    <p>Para usar os  números Flutuantes(números com vírgulas) no JS, é necessário  fazer a conversão de string para  número, usando o seguinte comando: <strong>Numbe.parseFloat(n)</strong></p>
+    <p> Nesse exemplo, a letra <strong>n</strong> é usada para  representar a variável escolhida.</p>
+    <p>Podemos usar também <strong>Number.(n)</strong> sozinho, dessa forma o JS vai diferenciar se o número é inteiro ou flutuante.</p>
+    <script>
+        //var n1 = Number.parseFloat(window.prompt('digite um numero: '))
+       // var n2 = Number.parseInt( window.prompt('digite outro numero: '))
+        var n1 = Number(window.prompt('Digite um número:'))
+        var n2 = Number(window.prompt('Digite outro número'))
+        var s = n1+ n2
+        window.alert(`A soma deu: `+ s)
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual o nome da sua escola?</title>
+</head>
+<body>
+    <h1>Qual o nome da sua escola?</h1>
+    <p> Nessa atividade, estou usando  variável. <br> usei também <strong>o window.prompt</strong> para  interagir com o usuário e  usei o <strong>window.alert</strong> para mostra em uma tela a resposta que  o usuário escreveu. </p>
+    <p>O  uso do document.body.style. background, foi utilizado para dar uma cor de fundo na cor rosa.</p>
+    <p>O uso do document.body.style.color, foi usado para  dar cor ao texto na cor branca.</p>
+    <script>
+        var escola = window.prompt('Em qual escola você estuda atualmente?')
+        window.alert('A escola ' + escola+ ' é uma  das melhores escolas de  Austin!')
+
+       /*document.write('A escola '+ escola+ ' é uma  ótima escola!')*/
+       document.body.style.background = 'pink'
+       document.body.style.color = 'white'
+    </script>
+</body>
+</html>

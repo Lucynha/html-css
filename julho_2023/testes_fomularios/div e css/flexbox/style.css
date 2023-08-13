@@ -1,0 +1,75 @@
+.container{
+    background-color: rgb(11, 10, 11);
+    display: flex;
+   height: 300px;
+    justify-content:space-around;
+    align-items:start;
+    row-gap: 10px 30px;
+    color: #fff;
+/*A classe coitainer, é a div pai, as divs p01 até p05 são as divs  filhos.
+
+Usando a margin auto  fará com que cada  item seja perfeitamente centralizado em ambos  os  eixos.*/
+    
+
+}
+.p01{
+    background-color:#f59bc9;
+    width:110px;
+    height: 100px;
+    margin: auto;
+}
+
+.p02{
+    background-color: #acddee;
+    width: 120px;
+    height: 100px;
+    margin: auto;
+
+}
+.p03{
+    background-color:#f693f9;
+    width: 130px;
+    height: 100px;
+    margin: auto;
+}
+.p04{
+    background-color: #fbf182;
+    width: 115px;
+    height: 100px;
+    margin:auto;
+
+}
+.p05{
+    background-color: #60d7ff;
+    width:125px;
+    height: 100px;
+    margin: auto;
+
+}
+.flex-container{
+    background-color: rgb(238, 103, 166);
+    width: 130px;0px;
+    height: 110px;
+    margin: auto;
+    /* primeiro criamos um layout flexível para contexto.*/
+    display: flex;
+    
+    /* então  nos definimos o flow direction e se seguirmos o items para  envelopar
+    * relembrando que  é o  mesmo que:display: 
+    *flex-direction: row;
+    * flex-wrap:wrap;*/
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+@media all and (max-width: 800px){
+    /* para o uso de  media queryies, é necessario que seja selecionada a div pai, ou seja, nesse caso, a div container.*/
+    .container{
+        justify-content: space-around;
+    }
+}
+@media all and (max-width:500px){
+    .container{
+        flex-direction:column;
+
+    }
+}
