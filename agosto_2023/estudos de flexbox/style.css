@@ -1,0 +1,36 @@
+/*começamos  fazendo  a esturutra do container e depois dadinado a estrutura do flex direction para dada classe*/
+h1{
+    text-align: center;
+    margin:20px 0 0 0;
+    font-size:1.25em;
+}
+body{
+    font-family: monospace;
+}
+
+.container{
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    border:1px solid #ccc;
+}
+.item{
+    flex:1;/* o número 1 dentro flex serve para  que cada item se expanda ocupando  o tamanho máximo do container.*/
+    margin:5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
+.row{
+    flex-direction: row;   
+    
+}
+.row-reverse{
+    flex-direction:row-reverse
+}
+.column{
+    flex-direction:column;
+}
+.column-reverse{
+    flex-direction:column-reverse;
+}
