@@ -2,8 +2,12 @@ html{
     background-color: rgb(142, 198, 216);
 }
 h1{
-background-color: white;
-color:black;
+background-color: rgb(20, 8, 128);
+color:rgb(100, 96, 96);
+text-align: center;
+border-radius: 6px;
+width: 700px;
+margin: auto;
 }
 .container{
     display: flex;
