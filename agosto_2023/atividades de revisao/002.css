@@ -1,0 +1,43 @@
+html{
+    background-color: hotpink;
+}
+h1{
+    color: white;
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 0.479);
+    font-size: 3em;
+    text-align: center;
+}
+.container{
+    display: flex;
+    max-width: 900px;
+    height: 400px;
+    margin: 0 auto;
+    border:2px solid #fff;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    flex-wrap: wrap;
+    align-content: space-around; 
+    border-radius:5px;
+}
+.container >*:hover{
+    background-color: rgb(222, 40, 176);
+}
+.item{
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    align-self: center ;/*faz o alinhamento do .item*/
+    border-radius: 3px;    
+}
+.item2{
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    flex-grow: 2;
+    color: blue;
+    font-size:1.2em;
+}
