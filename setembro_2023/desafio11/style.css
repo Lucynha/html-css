@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(94, 91, 91);
+}   
+ 
+
+
+#espaco{
+    background-image: url('imagens/espaco01.jpg');
+    background-color: rgb(245, 245, 215);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+    background-attachment: fixed;
+
+}
+#astronauta{
+    background-image: url('imagens/astronauta.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-attachment:fixed;
+   
+
+    
+    
+
+}
