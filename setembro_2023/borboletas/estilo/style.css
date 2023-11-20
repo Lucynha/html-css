@@ -1,9 +1,21 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+:root{
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Passion One', sans-serif;
+    --fonte3:'Indie Flower', cursive;
+}
 *{
     margin: 0;
     padding: 0;
+
+     
 }
 html, body{
+    font-family: var(--fonte1);
     min-width: 100vh;
     background-color: darkgray;
 }
@@ -14,12 +26,15 @@ header{
 }
 h1{
     padding: 50px;
+    font-family: var(--fonte2);
+    
 }
 /*h1 dentro do header*/
 header>h1{
     padding-top: 50px;
     font-variant: small-caps;
     /*text-transform: uppercase;(deixa tudo maiusculos, e todas do mesmo tamanho)*/
+    font-size: 10vw;
 
 }
 /*paragrafo dentro do header*/
@@ -37,22 +52,28 @@ a:hover, a footer{
 
 /*criar um espaço para criar o efeito paralax, usar line-height para  dar espaçamento para a leitura*/
 section{
-    padding-top: 10%vh;
-    padding-bottom: 10%vh;
-    line-height:2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 10vw;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 section.normal{
     background-color: white;
     color: black
 }
 section.imagem{
+    
     background-color: rgba(51,51,51);
     color: white;
+   
 }
 section.imagem>p{
     background-color: rgba(0, 0, 0, 0.253);
-    width:400px;
+    display: inline-block;
+    padding: 5px;
+    
 }
 
 footer{
