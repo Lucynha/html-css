@@ -1,0 +1,63 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    min-width: 100vh;
+    background-color: darkgray;
+}
+header{
+    background-color: black;
+   color: white;
+   text-align: center;
+}
+h1{
+    padding: 50px;
+}
+/*h1 dentro do header*/
+header>h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    /*text-transform: uppercase;(deixa tudo maiusculos, e todas do mesmo tamanho)*/
+
+}
+/*paragrafo dentro do header*/
+header>p{
+    padding-bottom: 50px;
+}
+a{
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover, a footer{
+    text-decoration:underline;
+}
+
+/*criar um espaço para criar o efeito paralax, usar line-height para  dar espaçamento para a leitura*/
+section{
+    padding-top: 10%vh;
+    padding-bottom: 10%vh;
+    line-height:2em;
+    padding-left: 30px;
+}
+section.normal{
+    background-color: white;
+    color: black
+}
+section.imagem{
+    background-color: rgba(51,51,51);
+    color: white;
+}
+section.imagem>p{
+    background-color: rgba(0, 0, 0, 0.253);
+    width:400px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

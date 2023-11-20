@@ -1,0 +1,45 @@
+*{
+    width: 400px;
+    height: 400px;
+    font-family: monospace;
+}
+body{
+    background-color: rgb(67, 66, 64);
+}
+.n01{
+    border: 5px dashed darkslateblue;
+    color: yellow;
+    background-color: black;
+    font-size: 2em;
+    text-align: center;
+    padding-top:20px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    border-radius: 40px 10px;
+}
+
+.n02{
+    background-color: red;
+    border: 5px double green;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align:center;
+    padding:20px;
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+    border-radius: 50%;
+}
+
+.n03{
+    background-color: hotpink;
+    border: 16px dotted lightskyblue;
+    font-size: 3em;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
