@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<style>
+    body{
+        background-image:linear-gradient(to right, rgb(245, 240, 245),rgb(119, 117, 120));
+    }
+    .conteudo{
+        display: flex;
+        list-style: none;
+        flex-flow: row wrap;
+        background: hotpink;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+        
+    }
+    .box{
+        padding: 5px;
+        margin: 10px;
+    }
+    li,a{
+        font-size: 25px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-family: monospace;
+        align-items: center;
+    }
+    .busca{
+        display: flex;
+        justify-content: flex-start;  
+    }
+    input{
+        background: lightblue;
+        border: none;
+        border-radius: 5px;
+    }
+    .material-icons{
+        color: #f8f4f4;
+        cursor: pointer;
+        padding-right: 25px;
+        align-content:center ;
+    }
+    a:hover{
+        cursor: pointer;
+        background-color: pink;
+        transition: 0.5s;        
+    }
+    .material-symbols-outlined{
+        cursor: pointer;
+        font-size: 30px;
+    }
+    div{
+        padding: 10px;
+        margin: 30px;
+    }
+    .logo{
+        align-self: center;
+       
+        padding: 5px;
+        margin: 15px;
+        width: 100px;
+        height: 80px;
+    }
+    img{
+        width: 100px;
+        height: 80px;        
+    }
+    
+    .logo a{
+        font-size: 10px;
+    }
+    .artigo1{
+        background-color: rgb(198, 237, 237);
+        width:800px;
+        border-radius: 5px 10px;
+        box-shadow: 2px 2px 2px #5a42e3;
+    }
+    .artigo2{
+        background-color: rgb(123, 229, 229);
+        width:800px;
+        border-radius: 10px 20px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.54) inset;
+    } 
+    #container{
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0px;
+        margin: 0px;
+        justify-content: center;
+    }
+    #container>img{
+       width: 150px;
+       height: 150px;
+       
+    } 
+    .caixa{
+        border-radius: 10px;
+        padding: 5px;
+    }
+    thead, tbody,tr,td{
+        border: 1px solid rgb(14, 14, 14);
+        padding: 5px;
+        color: rgb(250, 250, 247);
+        background-color: rgba(178, 219, 234, 0.616);
+        text-align: center;
+        font-size: 25px;
+        font-family: monospace;
+        
+    }
+    table{
+        border-collapse: collapse;
+        
+    } 
+    thead{
+        background: rgb(141, 116, 116);
+        color: rgb(12, 12, 12);
+    }
+    th{
+        background:black;
+    }
+
+</style>
+<body>
+    
+    <ul class="conteudo">      
+            <li class="logo"><img src="img/hacker.png" alt="logo"><a href="https://www.flaticon.com/free-icons/computer" title="computer icons" target="_blank">Flaticon</a><li>  
+            <li class="box"><a href="#">Home</a></li>
+            <li class="box"><a href="#"> Produtos</a></li>
+            <li class="box"><a href="#">Contato</a></li>                       
+        <div class="busca">
+            <input type="search" name="busca" id="busca" placeholder="procurar">
+            <span class="material-icons">search</span>
+            <span class="material-symbols-outlined">shopping_cart</span>            
+        </div>
+    </ul> 
+     <section class="secao">
+        <article class="artigo1">
+            <h1>Lorem </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quam labore ullam explicabo, dicta harum, consequatur perspiciatis veniam laboriosam ratione ipsa cum eum accusantium, debitis necessitatibus eos voluptates aut consectetur?</p>
+        </article>
+        <article class="artigo2">
+            <h2>kjkljlk</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium ab iure repellendus deleniti provident impedit mollitia officiis voluptas ea nobis. Soluta reiciendis, minima cum atque repudiandae autem natus error voluptates!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo obcaecati illum laudantium corrupti ea eius voluptates mollitia voluptas minus omnis commodi, aut magni. Suscipit sit, incidunt tempora sint quos ipsa.</p>
+        </article>
+    </section>
+    <div id="container">
+        <img src="img/borboleta001.jpg" alt="img1" class="caixa">
+        <img src="img/borboleta002.jpg" alt="img2" class="caixa">
+        <img src="img/sarah-sheedy-pUsTGxLzSsw-unsplash.jpg" alt="img3" class="caixa">
+    </div>
+    <h3>dsfjksdjfkldsjf</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam culpa quam. Corporis aperiam alias, modi optio repudiandae molestiae? Inventore omnis quas tempora accusantium cumque sit error doloribus aliquid minima!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, aperiam atque dolores ducimus magni quisquam consequuntur id modi maiores praesentium eos iusto perferendis cupiditate eum a provident ea. Quae, explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi labore accusantium assumenda! Nostrum illo nam earum quis dolorem quibusdam nihil animi, nesciunt, enim est recusandae soluta nulla, temporibus facere ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro consequatur, architecto fuga animi ducimus debitis ad possimus excepturi quae perspiciatis sed beatae, in reprehenderit dolorem minus totam ea soluta aspernatur.</p>
+    <table>
+        <thead>
+            <th colspan="3">Dias marcantes</th>
+            <tr>
+            <td>dia</td>
+            <td>mês</td>
+            <td>ano</td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>02</td>
+                <td>maio</td>
+                <td>1985</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>dezembro</td>
+                <td>2010</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>novembro</td>
+                <td>2023</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
